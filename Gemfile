@@ -27,4 +27,5 @@ end
 #Custom
 gem 'bootstrap-sass'
 gem 'devise'
-gem 'ruby', '>= 2.2.4'
+
+ruby "2.2.4"

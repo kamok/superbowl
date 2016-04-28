@@ -1,11 +1,23 @@
-@import 'bootstrap';
+$brand-primary: #f39c12;
 
+//~~Buttons~~//
+
+//~~Jumbotron~~//
 .jumbotron {
   background-image: url("home/jumbotron_bg.jpg");
   background-position: 50%, 30% ;
   background-repeat: no-repeat;
   h2 { 
   color: #e4e4e4;
-  }
-  
+  } 
 }
+
+
+//~~Navbar~~//
+$navbar-height: 40px;
+$navbar-inverse-bg: #262626;
+$navbar-inverse-link-color: white;
+
+//~~Imports~~//
+@import 'bootstrap-sprockets';
+@import 'bootstrap';

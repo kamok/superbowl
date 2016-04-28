@@ -1,11 +1,11 @@
 @import 'bootstrap';
 
 .jumbotron {
-  background-image: url(http://i.imgur.com/V7nyb3G.jpg);
-  background-position: center;
-  background-size: cover;
+  background-image: url("home/jumbotron_bg.jpg");
+  background-position: 50%, 30% ;
   background-repeat: no-repeat;
-  p { 
-  color: white;
+  h1 { 
+  color: #e4e4e4;
   }
+  
 }

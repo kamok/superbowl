@@ -10,8 +10,10 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+
 group :development, :test do
   gem 'byebug'
+  gem 'sqlite3'
 end
 
 group :development do

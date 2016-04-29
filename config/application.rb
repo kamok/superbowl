@@ -6,6 +6,10 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+# To restore the behavior of ActiveRecord models displaying 
+#their column information immediately after the console has 
+#loaded, here is one workaround:
+
 module Superbowl
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
@@ -25,5 +29,6 @@ module Superbowl
 
     #heroku and devise
     config.assets.initialize_on_precompile = false
+
   end
 end

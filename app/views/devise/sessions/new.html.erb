@@ -8,7 +8,7 @@
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="form-group">
         <%= f.label :email %><br />
-        <%= f.email_field :email, autofocus: true ,class: "form-control" %>
+        <%= f.email_field :email, autofocus: true , class: "form-control" %>
       </div>
 
       <div class="form-group">
@@ -26,10 +26,12 @@
       <div class="form-group">
         <%= f.submit "Log in", class: "btn btn-primary" %>
       </div>
+
     <% end %>
-  </div>
+  </div><!-- /panel body-->
+
   <div class="panel-footer">
-        <%= render "devise/shared/links" %>
-      </div>
+    <%= render "devise/shared/links" %>
+  </div>
 </div>
 

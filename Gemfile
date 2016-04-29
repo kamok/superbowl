@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby "2.2.4"
 
 gem 'rails', '4.2.5.1'
 gem 'sass-rails', '~> 5.0'
@@ -27,5 +28,4 @@ end
 #Custom
 gem 'bootstrap-sass'
 gem 'devise'
-
-ruby "2.2.4"
+gem 'paperclip', '~> 4.0'

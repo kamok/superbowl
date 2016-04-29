@@ -21,6 +21,19 @@ $navbar-height: 40px;
 $navbar-inverse-bg: #262626;
 $navbar-inverse-link-color: white;
 
+//~~Panel~~//
+$panel-default-heading-bg: #e6e6e6;
+$panel-default-text: #f39c12;
+$panel-footer-bg:white; //default was a light shade of orange
+
+.panel.panel-default{
+	margin-left: auto;
+  margin-right: auto;
+	max-width:500px;
+	@media only screen and (max-width: 768px) { //largest tablet
+		width:95%;
+	}
+}
 
 //~~Imports~~//
 @import 'bootstrap-sprockets';

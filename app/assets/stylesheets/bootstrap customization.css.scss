@@ -1,7 +1,8 @@
 $brand-primary: #f39c12;
 
-//~~Buttons~~//
-
+//~~Alerts~~//
+$state-info-bg: #fce1b6;
+$state-info-text:#af8747;
 //~~Jumbotron~~//
 .jumbotron {
   background-image: url("home/jumbotron_bg.jpg");
@@ -15,9 +16,11 @@ $brand-primary: #f39c12;
 
 
 //~~Navbar~~//
+$navbar-border-radius: 0px ; //default is rounded, this makes it flat
 $navbar-height: 40px;
 $navbar-inverse-bg: #262626;
 $navbar-inverse-link-color: white;
+
 
 //~~Imports~~//
 @import 'bootstrap-sprockets';

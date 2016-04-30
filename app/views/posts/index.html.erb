@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Listing Posts</h1>
 
 <table>
@@ -20,10 +18,12 @@
         <td><%= post.description %></td>
         <td><%= post.user.email if post.user %></td>
         <td><%= link_to 'Show', post %></td>
+
         <% if post.user == current_user %>
           <td><%= link_to 'Edit', edit_post_path(post) %></td>
           <td><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <% end %>
+        
       </tr>
     <% end %>
   </tbody>

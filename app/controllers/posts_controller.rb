@@ -53,12 +53,12 @@ class PostsController < ApplicationController
 
   private
     def set_post
-      @post = Post.find_by(params[:id])
+      @post = Post.find_by(id: params[:id])
     end
 
     def correct_user
       @post = current_user.posts.find_by(id: params[:id])
-      redirect_to pins_path if @post.nil?
+      redirect_to posts_path, notice: "You can't edit other people's posts." if @post.nil?
     end
 
     def post_params

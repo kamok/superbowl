@@ -4,8 +4,9 @@ $brand-primary: #f39c12;
 $state-info-bg: #fce1b6;
 $state-info-text:#af8747;
 //~~Jumbotron~~//
+
 .jumbotron {
-  background-image: url("home/jumbotron_bg.jpg");
+  background-image: asset-url("jumbotron_bg.jpg");
   background-position: 50%, 30% ;
   background-repeat: no-repeat;
   h2 { 

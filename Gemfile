@@ -28,3 +28,4 @@ end
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'paperclip', '~> 4.0'
+

@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
   
   def index
-    @posts = Post.all.reverse_order
+    @posts = Post.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 10)
   end
 
   def show
@@ -46,7 +46,7 @@ class PostsController < ApplicationController
   def destroy
     @post.destroy
     respond_to do |format|
-      format.html { redirect_to posts_url, notice: 'Post was successfully destroyed.' }
+      format.html { redirect_to posts_url, notice: 'Post was successfully deleted.' }
       format.json { head :no_content }
     end
   end

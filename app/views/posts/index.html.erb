@@ -16,8 +16,11 @@
               <%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %>
           </div>
         <% end %>
-
       </div>
     </div>
   <% end %>
-<div>
+</div>
+
+<div align="center">
+   <%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
+</div>

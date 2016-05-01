@@ -9,9 +9,10 @@
         <p><strong><%= @post.user.email if @post.user %></strong></p>
 
         <% if @post.user == current_user %>
-         <%= link_to 'Edit', edit_post_path(@post) %>
+          <span class = "glyphicon glyphicon-pencil"></span>
+          <%= link_to 'Edit', edit_post_path(@post) %>
         <% end %>
-
+          <span class = "glyphicon glyphicon-th-large"></span>
         <%= link_to 'Back', posts_path %>
       </div>
     </div>

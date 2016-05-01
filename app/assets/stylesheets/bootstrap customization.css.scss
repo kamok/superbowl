@@ -63,12 +63,6 @@ $panel-footer-bg: #f7f7f7; //default was a light shade of orange
 $panel-primary-border: #e6e6e6;
 $panel-primary-heading-bg: #e6e6e6;
 
-panel panel-primary panel-heading {
-  width: 500px ;
-  margin-left: auto ;
-  margin-right: auto ;
-}
-
 
 //~~Imports~~//
 @import 'bootstrap-sprockets';

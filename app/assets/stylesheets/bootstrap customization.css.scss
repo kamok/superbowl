@@ -3,25 +3,25 @@
 //~~~~~~~~~~~~//
  
 $brand-primary: #f39c12;
-$body-bg: #F1BD6B;
+$body-bg: #FAFAFA;
 
 //~~~~~~~~~~~~//
 //~~Navbar~~//
 //~~~~~~~~~~~~//
 $navbar-border-radius: 0px ; //default is rounded, this makes it flat
 $navbar-height: 40px;
-$navbar-inverse-link-color: grey;
+$navbar-inverse-link-color: white;
 
-.navbar-default {
-background-image: -webkit-linear-gradient(top, #ffffff 0%, #dfdfdf 100%);
-background-image: linear-gradient(to bottom, #ffffff 0%, #dfdfdf 100%);
-background-repeat: repeat-x;
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffdfdfdf', GradientType=0);
-}
+// .navbar-default {
+// background-image: -webkit-linear-gradient(top, #ffffff 0%, #dfdfdf 100%);
+// background-image: linear-gradient(to bottom, #ffffff 0%, #dfdfdf 100%);
+// background-repeat: repeat-x;
+// filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffdfdfdf', GradientType=0);
+// }
 
-.navbar-inverse.navbar-default{
-border-color: white;
-}
+// .navbar-inverse.navbar-default{
+// border-color: white;
+// }
 
 //~~~~~~~~~~~~//
 //~~Alerts~~//
@@ -69,17 +69,9 @@ $panel-footer-bg: #f7f7f7
 
 //Panels in posts//
 $panel-primary-border: #e6e6e6;
-$panel-primary-heading-bg: #f7f7f7;
-$panel-footer-bg: #dddddd; 
+$panel-primary-heading-bg: #e6e6e6;
 
-.panel.panel-primary{
-  margin-left: auto;
-  margin-right: auto;
-  max-width:500px;
-  @media only screen and (max-width: 768px) { //largest tablet
-    width:95%;
-  }
-}
+
 
 //~~Imports~~//
 @import 'bootstrap-sprockets';

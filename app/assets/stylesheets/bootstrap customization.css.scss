@@ -3,25 +3,25 @@
 //~~~~~~~~~~~~//
  
 $brand-primary: #f39c12;
-$body-bg: #F1BD6B;
+$body-bg: #FAFAFA;
 
 //~~~~~~~~~~~~//
 //~~Navbar~~//
 //~~~~~~~~~~~~//
 $navbar-border-radius: 0px ; //default is rounded, this makes it flat
 $navbar-height: 40px;
-$navbar-inverse-link-color: grey;
+$navbar-inverse-link-color: white;
 
-.navbar-default {
-background-image: -webkit-linear-gradient(top, #ffffff 0%, #dfdfdf 100%);
-background-image: linear-gradient(to bottom, #ffffff 0%, #dfdfdf 100%);
-background-repeat: repeat-x;
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffdfdfdf', GradientType=0);
-}
+// .navbar-default {
+// background-image: -webkit-linear-gradient(top, #ffffff 0%, #dfdfdf 100%);
+// background-image: linear-gradient(to bottom, #ffffff 0%, #dfdfdf 100%);
+// background-repeat: repeat-x;
+// filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffdfdfdf', GradientType=0);
+// }
 
-.navbar-inverse.navbar-default{
-border-color: white;
-}
+// .navbar-inverse.navbar-default{
+// border-color: white;
+// }
 
 //~~~~~~~~~~~~//
 //~~Alerts~~//

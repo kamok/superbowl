@@ -52,9 +52,10 @@ $state-info-text:#af8747;
 //~~Panel~~//
 //~~~~~~~~~~~~//
 
-$panel-default-heading-bg: #e6e6e6;
+$panel-default-heading-bg: #f7f7f7;
 $panel-default-text: #f39c12;
-$panel-footer-bg: white; //default was a light shade of orange
+$panel-footer-bg: #f7f7f7
+; //default was a light shade of orange
 
 .panel.panel-default{
 	margin-left: auto;
@@ -67,9 +68,10 @@ $panel-footer-bg: white; //default was a light shade of orange
 
 
 //Panels in posts//
-
 $panel-primary-border: #e6e6e6;
 $panel-primary-heading-bg: #e6e6e6;
+
+
 
 //~~Imports~~//
 @import 'bootstrap-sprockets';

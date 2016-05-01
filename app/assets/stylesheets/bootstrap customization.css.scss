@@ -69,12 +69,7 @@ $panel-footer-bg: white; //default was a light shade of orange
 //Panels in posts//
 
 $panel-primary-border: #e6e6e6;
-
-// #posts.transitions-enabled.box.panel.panel-primary{
-//   background-color: red;
-//   color: red;
-// }
-
+$panel-primary-heading-bg: #e6e6e6;
 
 //~~Imports~~//
 @import 'bootstrap-sprockets';

@@ -1,9 +1,40 @@
+//~~~~~~~~~~~~//
+//~~Scaffold~~//
+//~~~~~~~~~~~~//
+ 
 $brand-primary: #f39c12;
+$body-bg: #F1BD6B;
 
+//~~~~~~~~~~~~//
+//~~Navbar~~//
+//~~~~~~~~~~~~//
+$navbar-border-radius: 0px ; //default is rounded, this makes it flat
+$navbar-height: 40px;
+$navbar-inverse-link-color: grey;
+
+.navbar-default {
+background-image: -webkit-linear-gradient(top, #ffffff 0%, #dfdfdf 100%);
+background-image: linear-gradient(to bottom, #ffffff 0%, #dfdfdf 100%);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffdfdfdf', GradientType=0);
+}
+
+.navbar-inverse.navbar-default{
+border-color: white;
+}
+
+//~~~~~~~~~~~~//
 //~~Alerts~~//
+//~~~~~~~~~~~~//
+
 $state-info-bg: #fce1b6;
 $state-info-text:#af8747;
+
+
+
+//~~~~~~~~~~~~//
 //~~Jumbotron~~//
+//~~~~~~~~~~~~//
 
 .jumbotron {
   background-image: asset-url("jumbotron_bg.jpg");
@@ -16,16 +47,14 @@ $state-info-text:#af8747;
 }
 
 
-//~~Navbar~~//
-$navbar-border-radius: 0px ; //default is rounded, this makes it flat
-$navbar-height: 40px;
-$navbar-inverse-bg: #262626;
-$navbar-inverse-link-color: white;
 
+//~~~~~~~~~~~~//
 //~~Panel~~//
+//~~~~~~~~~~~~//
+
 $panel-default-heading-bg: #e6e6e6;
 $panel-default-text: #f39c12;
-$panel-footer-bg:white; //default was a light shade of orange
+$panel-footer-bg: white; //default was a light shade of orange
 
 .panel.panel-default{
 	margin-left: auto;
@@ -36,10 +65,18 @@ $panel-footer-bg:white; //default was a light shade of orange
 	}
 }
 
-.panel.panel-primary{
-  
-}
+
+//Panels in posts//
+
+$panel-primary-border: #e6e6e6;
+
+// #posts.transitions-enabled.box.panel.panel-primary{
+//   background-color: red;
+//   color: red;
+// }
+
 
 //~~Imports~~//
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+

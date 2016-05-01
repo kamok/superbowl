@@ -1,4 +1,4 @@
-<%= render 'pages/home' %>
+<%= render 'pages/home' unless user_signed_in? %>
 
 <div id = "posts" class="transitions-enabled">
   <% @posts.each do |post| %>

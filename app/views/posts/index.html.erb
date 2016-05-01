@@ -1,16 +1,18 @@
+<%= render 'pages/home' %>
+
 <div id = "posts" class="transitions-enabled">
   <% @posts.each do |post| %>
     <div class= "box panel panel-primary">
       <%= link_to image_tag(post.image.url(:medium)), post %>
       <div class = "panel-body">
-        <%= post.description %>
+        <strong><%= post.description %></br></strong>
         <%= post.user.email if post.user %>
 
         <% if post.user == current_user %>
           <div class = "actions">
             <span class = "glyphicon glyphicon-pencil"></span>
               <%= link_to 'Edit', edit_post_path(post) %>
-            <span class = "glyphicon glyphicon-remove"></span>
+            <span class = "glyphicon glyphicon-remove"></span>>
               <%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %>
           </div>
         <% end %>

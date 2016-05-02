@@ -6,7 +6,7 @@
       <%= link_to image_tag(post.image.url(:medium)), post %>
       <div class = "panel-body">
         <strong><%= post.description %></br></strong>
-        <%= post.user.email if post.user %>
+        <%= post.user.name if post.user %>
 
         <% if post.user == current_user %>
           <div class = "actions" style="color:#F39C12">

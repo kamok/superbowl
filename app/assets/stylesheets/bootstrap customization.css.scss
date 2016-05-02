@@ -1,9 +1,11 @@
 //~~~~~~~~~~~~//
-//~~Scaffold~~//
+//~~Main~~//
 //~~~~~~~~~~~~//
  
 $brand-primary: #f39c12;
 $body-bg: #FAFAFA;
+$font-family-sans-serif:'Open Sans', sans-serif;
+
 
 
 
@@ -37,6 +39,11 @@ $state-info-text:#af8747;
   color: #f2f2f2;
   text-shadow: 1px 1px black;
   } 
+  #content-1, #content-2, #content-3, #content-4, #content-5, #content-6 { 
+  color: #f2f2f2;
+  text-shadow: 1px 1px black;
+  font-size: 30px;
+  } 
 }
 
 
@@ -67,4 +74,3 @@ $panel-primary-heading-bg: #e6e6e6;
 //~~Imports~~//
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
-

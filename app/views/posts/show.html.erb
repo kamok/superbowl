@@ -8,7 +8,7 @@
         <p><%= @post.description %></p>
         <p><strong><%= @post.user.name if @post.user %></strong></p>
 
-        <% if @post.user == current_user %>
+        <% if current_user && post.user == current_user %>
           <span class = "glyphicon glyphicon-pencil"></span>
           <%= link_to 'Edit', edit_post_path(@post) %>
         <% end %>

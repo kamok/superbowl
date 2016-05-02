@@ -8,7 +8,7 @@
         <strong><%= post.description %></br></strong>
         <%= post.user.name if post.user %>
 
-        <% if post.user == current_user %>
+        <% if current_user && post.user == current_user %>
           <div class = "actions" style="color:#F39C12">
             <span class = "glyphicon glyphicon-pencil" ></span>
               <%= link_to 'Edit', edit_post_path(post) %>

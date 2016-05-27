@@ -30,14 +30,13 @@ class PostsController < ApplicationController
   end
 
   def update
-
-      if @post.update(post_params)
-        flash[:notice] = "Post has been updated."
-        redirect_to @post
-      else
-        flash[:notice] = "Post has not been updated."
-        render "edit"
-      end
+    if @post.update(post_params)
+      flash[:notice] = "Post has been updated."
+      redirect_to @post
+    else
+      flash[:notice] = "Post has not been updated."
+      render "edit"
+    end
   end
 
   def destroy
@@ -49,7 +48,7 @@ class PostsController < ApplicationController
   end
 
   private
-  
+
     def set_post
       @post = Post.find_by(id: params[:id])
     end

@@ -5,9 +5,9 @@ def update
     is_facebook_account = !@user.provider.blank?
 
     successfully_updated = if !is_facebook_account
-      @user.update_with_password(params[:user])
+      @user.update_with_password(params[:user].permit(:email, :name, :current_password))
     else
-      @user.update_without_password(params[:user])
+      @user.update_without_password(params[:user].permit(:email, :name))
     end
 
     if successfully_updated

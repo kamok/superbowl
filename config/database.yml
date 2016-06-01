@@ -1,0 +1,18 @@
+development:
+  adapter: postgresql
+  database: db/development
+  username: Ka
+  password: superbowl
+  host: localhost
+  encoding: UTF8
+  pool: 5
+  timeout: 5000
+
+test:
+  adapter: postgresql
+  encoding: UTF8
+  database: db/test
+  username: Ka
+  password: superbowl
+  pool: 5
+  timeout: 5000

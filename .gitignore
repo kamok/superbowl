@@ -11,7 +11,6 @@
 /tmp
 
 #my shit#
-config/database.yml
 public/system/posts/images
 **/posts
 

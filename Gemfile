@@ -14,7 +14,7 @@ gem 'pg'
 
 group :development, :test do
   gem 'byebug'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 3.4'
 end
 
 group :test do

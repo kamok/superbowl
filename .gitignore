@@ -10,9 +10,11 @@
 !/log/.keep
 /tmp
 
-#my shit#
+# my ignored files#
 public/system/posts/images
 **/posts
+coverage
+
 
 
 

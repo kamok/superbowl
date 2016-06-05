@@ -22,6 +22,7 @@ group :test do
   gem 'factory_girl_rails', '~> 4.2.1'
   gem 'shoulda-matchers', '~> 3.1'
   gem 'simplecov', require: false
+  gem 'shoulda-matchers', '~> 3.1'
 end
 
 group :development do

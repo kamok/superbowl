@@ -259,7 +259,7 @@ DEPENDENCIES
   capybara (~> 2.7.1)
   coffee-rails (~> 4.1.0)
   coffee-script-source (= 1.8.0)
-  devise
+  devise (~> 4.0.0)
   factory_girl_rails (~> 4.2.1)
   figaro (~> 1.1.0)
   jbuilder (~> 2.0)

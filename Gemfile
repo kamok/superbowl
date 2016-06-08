@@ -32,8 +32,10 @@ group :production do
   gem 'rails_12factor'
 end
 #Custom
+gem 'acts_as_commentable'
 gem 'bootstrap-sass'
 gem 'devise', '~> 4.0.0'
+gem 'figaro', '~> 1.1.0'
 gem 'paperclip', '~> 4.0'
 gem 'aws-sdk', '< 2.0'
 gem 'masonry-rails', '~> 0.2.0'
@@ -44,5 +46,3 @@ gem 'coffee-script-source', '1.8.0'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2' 
-
-gem 'figaro', '~> 1.1.0'

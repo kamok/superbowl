@@ -6,18 +6,13 @@ class CommentsController < ApplicationController
 
 		comment = post.comments.build(comment_params)
 		comment.user = current_user
-		
+
 		if comment.save
 			flash[:notice] = "Comment has been created."
 			redirect_to post
 		else
 			flash[:alert] = "Comment has not been created."
 		end
-	end
-
-	def index
-		@post = Post.find(params[:post_id])
-		@comments = @post.comment.order("created_at DESC")
 	end
 
 	private

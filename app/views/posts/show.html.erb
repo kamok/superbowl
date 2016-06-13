@@ -18,7 +18,7 @@
         <div class="comment-section form-group">
           <%= form_tag create_comment_path, method: "post" do %>
             <%= hidden_field_tag "id", @post.id %>
-            <%= text_area_tag :comment,'', class: "form-control", placeholder: "Your comments" %>
+            <%= text_area_tag :comment,'', class: "form-control", placeholder: "Your comments are immutable like an owl's determination." %>
             <%= submit_tag "Submit", class: "btn btn-primary" %>
           <% end %>
         </div>
@@ -27,11 +27,13 @@
 
         <div class="comment-list">
           <h4>Comments</h4>
+          <div class ="comment-show">
           <% @comments.each do |comment| %>
+            <b><%= comment.user.name %></b> <br>
             <%= comment.comment %> <br>
-            <%= comment.user.name %> <br>
             <br>
           <% end %>
+          </div>
         </div>
       </div>
 

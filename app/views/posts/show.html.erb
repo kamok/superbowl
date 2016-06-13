@@ -1,35 +1,35 @@
 <div class="row">
   <div class="col-md-offset-2 col-md-8">
+  <%= link_to 'Back', posts_path %>
     <div class="panel panel-primary">
       <div class="panel-heading text-center">
         <%= image_tag @post.image.url(:large) %>
       </div>
       <div class="panel-body">
         <p><%= @post.description %></p>
-        <p><strong><%= @post.user.name if @post.user %></strong></p>
+        <p><strong>by <%= @post.user.name if @post.user %></strong></p>
 
         <% if current_user && @post.user == current_user %>
           <span class = "glyphicon glyphicon-pencil"></span>
           <%= link_to 'Edit', edit_post_path(@post) %>
         <% end %>
-          <span class = "glyphicon glyphicon-th-large"></span>
-        <%= link_to 'Back', posts_path %>
       </div>
+      <div class="panel-footer">
+        <div class="comment-section form-group">
+          <%= form_tag create_comment_path, method: "post" do %>
+            <%= hidden_field_tag "id", @post.id %>
+            <%= text_area_tag :comment, placeholder: "Your comments" %>
+            <%= submit_tag "Submit", class: "btn btn-primary" %>
+          <% end %>
+        </div>
 
-      <div class="comment-section">
-        <%= form_tag create_comment_path, method: "post" do %>
-          <%= hidden_field_tag "id", @post.id %>
-          <%= text_area_tag :comment %>
-          <%= submit_tag "Submit" %>
-        <% end %>
-      </div>
-
-      <div class="comment-list">
-        <% @comments.each do |comment| %>
-          <%= comment.comment %> <br>
-          <%= comment.user.name %> <br>
-          <br>
-        <% end %>
+        <div class="comment-list">
+          <% @comments.each do |comment| %>
+            <%= comment.comment %> <br>
+            <%= comment.user.name %> <br>
+            <br>
+          <% end %>
+        </div>
       </div>
 
     </div>

@@ -23,7 +23,10 @@
           <% end %>
         </div>
 
+        <div class="row"></div>
+
         <div class="comment-list">
+          <h4>Comments</h4>
           <% @comments.each do |comment| %>
             <%= comment.comment %> <br>
             <%= comment.user.name %> <br>

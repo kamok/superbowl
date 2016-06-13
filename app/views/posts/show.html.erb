@@ -18,7 +18,7 @@
         <div class="comment-section form-group">
           <%= form_tag create_comment_path, method: "post" do %>
             <%= hidden_field_tag "id", @post.id %>
-            <%= text_area_tag :comment, placeholder: "Your comments" %>
+            <%= text_area_tag :comment,'', class: "form-control", placeholder: "Your comments" %>
             <%= submit_tag "Submit", class: "btn btn-primary" %>
           <% end %>
         </div>
